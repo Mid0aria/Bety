@@ -1,0 +1,18 @@
+{
+    "name": "bety",
+    "version": "0.0.1",
+    "description": "idk",
+    "main": "main.js",
+    "devDependencies": {},
+    "dependencies": {
+        "discord.js": "^14.14.1",
+        "dotenv": "^16.3.1",
+        "ejs": "^3.1.9",
+        "express": "^4.18.2"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "mid0",
+    "license": "?"
+}

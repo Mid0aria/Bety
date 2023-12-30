@@ -1,0 +1,67 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="<%=appname%>" />
+    <title><%=appname%> - <%=user.username%></title>
+    <style>
+        .online {
+            border: 6px solid #008000;
+            box-sizing: border-box;
+            border-radius: 100%;
+        }
+        .dnd {
+            border: 6px solid #ff0000;
+            box-sizing: border-box;
+            border-radius: 100%;
+        }
+        .idle {
+            border: 6px solid #ffff00;
+            box-sizing: border-box;
+            border-radius: 100%;
+        }
+        .offline {
+            border: 6px solid #808080;
+            box-sizing: border-box;
+            border-radius: 100%;
+        }
+    </style>
+    <link
+        rel="shortcut icon"
+        type="image/png"
+        href="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>?size=2048"
+    />
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <div>
+        <div class="swiper-slide first">
+            <img
+                class="<%=user.presence%>"
+                src="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>?size=2048"
+            />
+
+            <span>
+                <h3><span class="rainbow"><%=user.username%></span></h3>
+            </span>
+        </div>
+    </div>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/text.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/modernizr.js"></script>
+</body>
